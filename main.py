@@ -142,7 +142,7 @@ else:
         """
         However, the amulet is guarded by an ancient and powerful guardian—a fearsome dragon! To claim the amulet, you must defeat the dragon in a battle of strength and will.
         """)
-    print("The Dragon current live is 100%")
+    print("The 🐉Dragon current live is 100%")
     print("ready for great battle")
     dragon_live = 100
     while not dragon_live == 0 and not user_live == 0:
@@ -152,65 +152,65 @@ else:
                 print(f"Do you have to use your {user_weapon}. Enter Y for Yes and N for N")
                 user_answer = input("Your choice: ")
                 if user_answer.upper() == "Y":
-                    print(f"{user_weapon} is engaged....")
+                    print(f"💊{user_weapon} is engaged....")
                     time.sleep(3)
                     dragon_live -= 30
                     user_weapon = ""
-                    print(f"Current dragon live is {dragon_live}%")
+                    print(f"Current 🐉dragon live is {dragon_live}%")
 
                 elif user_answer.upper() == "N":
-                    print('You attacked the dragon.....')
+                    print('You attacked the 🐉dragon.....')
                     dice_throw_result = random.randint(1, 6)
                     if dice_throw_result < 4:
-                        print("Dragon suffered a minor attack from the dragon")
+                        print("🐉Dragon suffered a minor attack from the dragon")
                         time.sleep(3)
                         dragon_live -= 10
                         print(f"Current dragon live is {dragon_live}%")
                     else:
-                        print("Dragon suffered a bad attack from the dragon")
+                        print("🐉Dragon suffered a bad attack from the dragon")
                         time.sleep(3)
                         dragon_live -= 20
                         print(f"Current dragon live is {dragon_live}%")
 
                 else:
-                    print('You attacked the dragon.....')
+                    print('🎖️You attacked the dragon.....')
                     dice_throw_result = random.randint(1, 6)
                     if dice_throw_result < 4:
-                        print("Dragon suffered a minor attack from the dragon")
+                        print("🐉Dragon suffered a minor attack from the dragon")
                         time.sleep(3)
                         dragon_live -= 10
-                        print(f"Current dragon live is {dragon_live}%")
+                        print(f"Current 🐉dragon live is {dragon_live}%")
                     else:
-                        print("Dragon suffered a bad attack from the dragon")
+                        print("🐉Dragon suffered a bad attack from the dragon")
                         time.sleep(3)
                         dragon_live -= 20
                         print(f"Current dragon live is {dragon_live}%")
             else:
-                print('You attacked the dragon.....')
+                print('🎖️You attacked the dragon.....')
                 time.sleep(3)
                 dragon_live -= 10
-                print(f"Current dragon live is {dragon_live}%")
+                print(f"Current 🐉dragon live is {dragon_live}%")
 
             if not(dragon_live == 0):
-                print("Dragon move...")
+                print("🐉 Dragon move...")
                 dice_throw_result = random.randint(1, 6)
                 if dice_throw_result < 4:
-                    print("You suffered a minor attack from the dragon")
+                    print("🔥You suffered a minor attack from the dragon.")
                     time.sleep(3)
                     user_live -= 10
-                    print(f"Your current live is {user_live}%")
+                    print(f"🎖️Your current live is {user_live}%")
                 else:
-                    print("You suffered a bad attack from the dragon")
+                    print("🔥You suffered a bad attack from the dragon")
                     time.sleep(3)
                     user_live -= 20
-                    print(f"Your current live is {user_live}%")
+                    print(f"🎖️Your current live is {user_live}%")
             else:
                 break
 
     if user_live == 0:
-        print("You lost the battle with the dragon. You cold not retrieve the Enchanted Amulet")
+        print("You lost the battle with the dragon. You cold not retrieve the Enchanted Amulet.😢")
     else:
-        print("You won the battle our hero. You brought back the Enchanted Amulet to the village")
+        print("You won the battle our hero. You brought back the Enchanted Amulet to the village.😃")
 
 
 
